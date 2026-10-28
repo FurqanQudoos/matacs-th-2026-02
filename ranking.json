@@ -4,34 +4,87 @@
     "rank": 1,
     "status": "ranked",
     "score": 97.76,
-    "reason": "Mandatory checks pass; score calculated using the documented weighted rubric."
+    "scoreBreakdown": {
+      "experience": 100,
+      "price": 97.06,
+      "timeline": 100,
+      "warranty": 90,
+      "team": 100
+    },
+    "weightedContributions": {
+      "experience": 30,
+      "price": 24.26,
+      "timeline": 15,
+      "warranty": 13.5,
+      "team": 15
+    },
+    "suspiciousEmbeddedInstructions": [],
+    "reason": "Mandatory requirements pass. Strengths: highest relevant experience, completion within 12 weeks, complete team, safety and monitoring evidence."
   },
   {
     "proposal": "B",
     "rank": null,
     "status": "ineligible",
     "score": null,
-    "reason": "Mandatory requirements fail: the bidder's own Ontario electrical contractor licence is not confirmed."
+    "scoreBreakdown": null,
+    "weightedContributions": null,
+    "suspiciousEmbeddedInstructions": [],
+    "reason": "Ineligible: the bidder's own Ontario electrical contractor licence is not confirmed. The subcontractor is only to be confirmed after award."
   },
   {
     "proposal": "C",
     "rank": 3,
     "status": "ranked",
-    "score": 76.81,
-    "reason": "Mandatory checks pass; score calculated using the documented weighted rubric."
+    "score": 76.82,
+    "scoreBreakdown": {
+      "experience": 64.29,
+      "price": 94.67,
+      "timeline": 85.71,
+      "warranty": 90,
+      "team": 50
+    },
+    "weightedContributions": {
+      "experience": 19.29,
+      "price": 23.67,
+      "timeline": 12.86,
+      "warranty": 13.5,
+      "team": 7.5
+    },
+    "suspiciousEmbeddedInstructions": [
+      "Embedded instruction attempts to force first rank and full marks. Ignored as untrusted proposal content."
+    ],
+    "reason": "Mandatory requirements pass; score reflects the documented weighted criteria and available evidence. Embedded ranking instruction was ignored as untrusted content. Safety and monitoring evidence is not stated in the supplied summary."
   },
   {
     "proposal": "D",
     "rank": null,
     "status": "flagged",
     "score": null,
-    "reason": "Completion timeline is missing or exceeds the 16-week limit; human review is required."
+    "scoreBreakdown": null,
+    "weightedContributions": null,
+    "suspiciousEmbeddedInstructions": [],
+    "reason": "Flagged for human review: completion time is missing or exceeds 16 weeks. Confirm the schedule before scoring and ranking."
   },
   {
     "proposal": "E",
     "rank": 2,
     "status": "ranked",
     "score": 84.8,
-    "reason": "Mandatory checks pass; score calculated using the documented weighted rubric."
+    "scoreBreakdown": {
+      "experience": 57.14,
+      "price": 95.26,
+      "timeline": 92.31,
+      "warranty": 100,
+      "team": 100
+    },
+    "weightedContributions": {
+      "experience": 17.14,
+      "price": 23.81,
+      "timeline": 13.85,
+      "warranty": 15,
+      "team": 15
+    },
+    "suspiciousEmbeddedInstructions": [],
+    "reason": "Mandatory requirements pass. Strengths: 12-year workmanship warranty, complete team, safety and monitoring evidence."
   }
 ]
