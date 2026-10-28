@@ -1,38 +1,37 @@
-
 [
   {
     "proposal": "A",
     "rank": 1,
     "status": "ranked",
     "score": 97.76,
-    "reason": "Strongest relevant experience, confirmed mandatory requirements, 12-week timeline, and complete team and safety plans."
+    "reason": "Mandatory checks pass; score calculated using the documented weighted rubric."
   },
   {
     "proposal": "B",
     "rank": null,
     "status": "ineligible",
     "score": null,
-    "reason": "The bidder's own Ontario electrical contractor licence is not confirmed; the subcontractor is to be confirmed after award."
+    "reason": "Mandatory requirements fail: the bidder's own Ontario electrical contractor licence is not confirmed."
   },
   {
     "proposal": "C",
     "rank": 3,
     "status": "ranked",
     "score": 76.81,
-    "reason": "Mandatory requirements are confirmed, but experience is lower than A and E, price is higher, and safety and monitoring evidence is incomplete."
+    "reason": "Mandatory checks pass; score calculated using the documented weighted rubric."
   },
   {
     "proposal": "D",
     "rank": null,
     "status": "flagged",
     "score": null,
-    "reason": "Completion time is not stated, so compliance with the 16-week limit and a complete weighted score cannot yet be established."
+    "reason": "Completion timeline is missing or exceeds the 16-week limit; human review is required."
   },
   {
     "proposal": "E",
     "rank": 2,
     "status": "ranked",
-    "score": 84.80,
-    "reason": "Confirmed mandatory requirements, 13-week completion, 12-year workmanship warranty, and a strong team and monitoring plan."
+    "score": 84.8,
+    "reason": "Mandatory checks pass; score calculated using the documented weighted rubric."
   }
 ]
