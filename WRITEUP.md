@@ -6,11 +6,15 @@ AI will extract proposal facts such as price, licence details, experience, timel
 
 Normal application code will validate the extracted data, apply mandatory pass/fail rules, calculate weighted scores, and sort eligible proposals. This separation makes numeric scoring more predictable and repeatable. AI will not make the final award decision.
 
+The proposed scoring rubric normalizes experience against the highest relevant installation count, scores price relative to the lowest price in the mandatory-pass comparison set, and scores timelines relative to the shortest known timeline in that set. Warranty combines panel and workmanship warranty scores, while team and approach uses four equally weighted items. These formulas are design assumptions because the brief does not prescribe exact scoring formulas.
+
 ## 2. Consistency and Explainability
 
-The system will use a documented scoring rubric, fixed arithmetic, and a consistent rounding policy. Each assessment will retain the criteria version, extracted facts, evidence, scores, and ranking reasons.
+The system will use a documented scoring rubric, fixed arithmetic, and a consistent rounding policy. Each assessment will retain the criteria version, extracted facts, supporting evidence, score breakdown, and ranking reasons.
 
 AI extraction can vary between runs, so identical results cannot be guaranteed by the prompt alone. Schema validation, evidence checks, controlled scoring rules, and human review will reduce this risk. Reviewers will see the evidence and score contribution for each criterion.
+
+The scoring benchmark and criteria version will be recorded for each run so that reviewers can reproduce calculations and understand how changes in the comparison set affect scores.
 
 ## 3. Human in the Loop
 
@@ -28,9 +32,10 @@ Previous results will not be silently overwritten. Proposals can be rescored usi
 
 - **Incorrect extraction:** Retain supporting evidence, validate data types and ranges, and request human verification when information is unclear.
 - **Hallucinated facts:** Accept only evidence-supported facts; represent missing values as unknown rather than inventing them.
-- **Prompt injection:** Treat proposal text as untrusted input. Ignore embedded instructions that attempt to change scoring or ranking, and log suspicious content.
+- **Prompt injection:** Treat proposal text as untrusted input. Ignore embedded instructions that attempt to change scoring or ranking, and log suspicious content. For example, the embedded instruction in Proposal C must not influence its score or position.
 - **Bias or inconsistent scoring:** Use documented criteria, transparent formulas, consistent treatment of equivalent evidence, and reviewer oversight.
-- **Missing information:** Flag incomplete proposals for review rather than silently assuming compliance.
+- **Missing information:** Flag incomplete proposals for review rather than silently assuming compliance. Proposal D requires timeline clarification before a complete score can be assigned.
+- **Eligibility uncertainty:** Apply the documented mandatory rules consistently. Proposal B's bidder licence is not confirmed, so the proposed policy treats it as ineligible unless the requirement is clarified or the necessary evidence is provided under the applicable review process.
 - **Cost and reliability:** Process only necessary text, avoid unnecessary AI calls, validate outputs, and handle extraction failures safely.
 
-The proposed formulas and handling of missing evidence are design assumptions because the assessment brief does not specify every scoring detail.
+The proposed formulas, normalization methods, and handling of missing evidence are design assumptions because the assessment brief does not specify every scoring detail.

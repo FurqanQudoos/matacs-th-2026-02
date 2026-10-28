@@ -1,0 +1,16 @@
+
+flowchart TD
+    A["Admin defines category and criteria"] --> B["Reviewer uploads proposals"]
+    B --> C["Extract PDF text"]
+    C --> D["AI extracts facts and evidence"]
+    D --> E["Validate extracted data"]
+    E --> F{"Mandatory checks"}
+    F -->|Fail| G["Mark ineligible"]
+    F -->|Missing or unclear| H["Flag for human review"]
+    F -->|Pass| I["Calculate weighted scores using code"]
+    I --> J["Rank eligible proposals"]
+    G --> K["Prepare results and audit log"]
+    H --> K
+    J --> K
+    K --> L["Reviewer checks evidence and results"]
+    L --> M["Human makes final award decision"]
