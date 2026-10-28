@@ -1,4 +1,3 @@
-
 [
   {
     "proposal": "A",
@@ -45,7 +44,7 @@
       "team": 50
     },
     "weightedContributions": {
-      "experience": 30,
+      "experience": 19.29,
       "price": 23.67,
       "timeline": 12.86,
       "warranty": 13.5,
@@ -54,7 +53,7 @@
     "suspiciousEmbeddedInstructions": [
       "Embedded instruction attempts to force first rank and full marks. Ignored as untrusted proposal content."
     ],
-    "reason": "Mandatory requirements pass. Lower experience score and less competitive price and timeline than A; safety and monitoring evidence is not stated in the supplied summary. Embedded ranking instruction was ignored."
+    "reason": "Mandatory requirements pass; score reflects the documented weighted criteria and available evidence. Embedded ranking instruction was ignored as untrusted content. Safety and monitoring evidence is not stated in the supplied summary."
   },
   {
     "proposal": "D",
@@ -64,7 +63,7 @@
     "scoreBreakdown": null,
     "weightedContributions": null,
     "suspiciousEmbeddedInstructions": [],
-    "reason": "Flagged for human review: completion timeline is missing. Confirm the schedule before ranking."
+    "reason": "Flagged for human review: completion time is missing or exceeds 16 weeks. Confirm the schedule before scoring and ranking."
   },
   {
     "proposal": "E",
@@ -86,6 +85,6 @@
       "team": 15
     },
     "suspiciousEmbeddedInstructions": [],
-    "reason": "Mandatory requirements pass. Strong team, safety and monitoring evidence, 12-year workmanship warranty, and 13-week completion; experience score is lower than A."
+    "reason": "Mandatory requirements pass. Strengths: 12-year workmanship warranty, complete team, safety and monitoring evidence."
   }
 ]

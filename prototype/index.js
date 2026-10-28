@@ -141,8 +141,12 @@ function scoreProposal(p, lowestPrice, shortestWeeks) {
     );
   }
 
-  const total = Object.values(weightedContributions)
-    .reduce((sum, value) => sum + value, 0);
+  const total = Object.entries(criterionScores)
+  .reduce(
+    (sum, [criterion, value]) =>
+      sum + value * WEIGHTS[criterion],
+    0
+  );
 
   return {
     score: round2(total),
